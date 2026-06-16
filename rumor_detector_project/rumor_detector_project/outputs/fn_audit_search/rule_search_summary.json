@@ -1,0 +1,675 @@
+{
+  "rows": 401,
+  "base_accuracy": 0.8877805486284289,
+  "base_confusion_matrix": [
+    [
+      216,
+      10
+    ],
+    [
+      35,
+      140
+    ]
+  ],
+  "base_classification_report": {
+    "0": {
+      "precision": 0.8605577689243028,
+      "recall": 0.9557522123893806,
+      "f1-score": 0.9056603773584906,
+      "support": 226.0
+    },
+    "1": {
+      "precision": 0.9333333333333333,
+      "recall": 0.8,
+      "f1-score": 0.8615384615384616,
+      "support": 175.0
+    },
+    "accuracy": 0.8877805486284289,
+    "macro avg": {
+      "precision": 0.896945551128818,
+      "recall": 0.8778761061946903,
+      "f1-score": 0.8835994194484761,
+      "support": 401.0
+    },
+    "weighted avg": {
+      "precision": 0.8923176785791166,
+      "recall": 0.8877805486284289,
+      "f1-score": 0.886405177187655,
+      "support": 401.0
+    }
+  },
+  "fn_count": 35,
+  "fp_count": 10,
+  "top_local_knn_override_rules": [
+    {
+      "accuracy": 0.885286783042394,
+      "changed": 3,
+      "rule": {
+        "dedicated_prob_1_min": 0.2,
+        "knn_rumor_ratio_top5_min": 0.4,
+        "knn_rumor_ratio_top3_min": 0.7,
+        "top1_similarity_min_if_top1_label_1": 0.4,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          34,
+          141
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.885286783042394,
+      "changed": 3,
+      "rule": {
+        "dedicated_prob_1_min": 0.2,
+        "knn_rumor_ratio_top5_min": 0.4,
+        "knn_rumor_ratio_top3_min": 0.8,
+        "top1_similarity_min_if_top1_label_1": 0.4,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          34,
+          141
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.885286783042394,
+      "changed": 3,
+      "rule": {
+        "dedicated_prob_1_min": 0.25,
+        "knn_rumor_ratio_top5_min": 0.4,
+        "knn_rumor_ratio_top3_min": 0.7,
+        "top1_similarity_min_if_top1_label_1": 0.4,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          34,
+          141
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.885286783042394,
+      "changed": 3,
+      "rule": {
+        "dedicated_prob_1_min": 0.25,
+        "knn_rumor_ratio_top5_min": 0.4,
+        "knn_rumor_ratio_top3_min": 0.8,
+        "top1_similarity_min_if_top1_label_1": 0.4,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          34,
+          141
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.885286783042394,
+      "changed": 3,
+      "rule": {
+        "dedicated_prob_1_min": 0.3,
+        "knn_rumor_ratio_top5_min": 0.4,
+        "knn_rumor_ratio_top3_min": 0.7,
+        "top1_similarity_min_if_top1_label_1": 0.4,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          34,
+          141
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.885286783042394,
+      "changed": 3,
+      "rule": {
+        "dedicated_prob_1_min": 0.3,
+        "knn_rumor_ratio_top5_min": 0.4,
+        "knn_rumor_ratio_top3_min": 0.8,
+        "top1_similarity_min_if_top1_label_1": 0.4,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          34,
+          141
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.885286783042394,
+      "changed": 3,
+      "rule": {
+        "dedicated_prob_1_min": 0.35,
+        "knn_rumor_ratio_top5_min": 0.4,
+        "knn_rumor_ratio_top3_min": 0.7,
+        "top1_similarity_min_if_top1_label_1": 0.4,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          34,
+          141
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.885286783042394,
+      "changed": 3,
+      "rule": {
+        "dedicated_prob_1_min": 0.35,
+        "knn_rumor_ratio_top5_min": 0.4,
+        "knn_rumor_ratio_top3_min": 0.8,
+        "top1_similarity_min_if_top1_label_1": 0.4,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          34,
+          141
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.885286783042394,
+      "changed": 3,
+      "rule": {
+        "dedicated_prob_1_min": 0.4,
+        "knn_rumor_ratio_top5_min": 0.4,
+        "knn_rumor_ratio_top3_min": 0.7,
+        "top1_similarity_min_if_top1_label_1": 0.4,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          34,
+          141
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.885286783042394,
+      "changed": 3,
+      "rule": {
+        "dedicated_prob_1_min": 0.4,
+        "knn_rumor_ratio_top5_min": 0.4,
+        "knn_rumor_ratio_top3_min": 0.8,
+        "top1_similarity_min_if_top1_label_1": 0.4,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          34,
+          141
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8827930174563591,
+      "changed": 2,
+      "rule": {
+        "dedicated_prob_1_min": 0.2,
+        "knn_rumor_ratio_top5_min": 0.4,
+        "knn_rumor_ratio_top3_min": 0.7,
+        "top1_similarity_min_if_top1_label_1": 0.5,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          35,
+          140
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8827930174563591,
+      "changed": 2,
+      "rule": {
+        "dedicated_prob_1_min": 0.2,
+        "knn_rumor_ratio_top5_min": 0.4,
+        "knn_rumor_ratio_top3_min": 0.7,
+        "top1_similarity_min_if_top1_label_1": 0.55,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          35,
+          140
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8827930174563591,
+      "changed": 2,
+      "rule": {
+        "dedicated_prob_1_min": 0.2,
+        "knn_rumor_ratio_top5_min": 0.4,
+        "knn_rumor_ratio_top3_min": 0.7,
+        "top1_similarity_min_if_top1_label_1": 0.6,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          35,
+          140
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8827930174563591,
+      "changed": 2,
+      "rule": {
+        "dedicated_prob_1_min": 0.2,
+        "knn_rumor_ratio_top5_min": 0.4,
+        "knn_rumor_ratio_top3_min": 0.7,
+        "top1_similarity_min_if_top1_label_1": 0.7,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          35,
+          140
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8827930174563591,
+      "changed": 2,
+      "rule": {
+        "dedicated_prob_1_min": 0.2,
+        "knn_rumor_ratio_top5_min": 0.4,
+        "knn_rumor_ratio_top3_min": 0.8,
+        "top1_similarity_min_if_top1_label_1": 0.5,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          35,
+          140
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8827930174563591,
+      "changed": 2,
+      "rule": {
+        "dedicated_prob_1_min": 0.2,
+        "knn_rumor_ratio_top5_min": 0.4,
+        "knn_rumor_ratio_top3_min": 0.8,
+        "top1_similarity_min_if_top1_label_1": 0.55,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          35,
+          140
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8827930174563591,
+      "changed": 2,
+      "rule": {
+        "dedicated_prob_1_min": 0.2,
+        "knn_rumor_ratio_top5_min": 0.4,
+        "knn_rumor_ratio_top3_min": 0.8,
+        "top1_similarity_min_if_top1_label_1": 0.6,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          35,
+          140
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8827930174563591,
+      "changed": 2,
+      "rule": {
+        "dedicated_prob_1_min": 0.2,
+        "knn_rumor_ratio_top5_min": 0.4,
+        "knn_rumor_ratio_top3_min": 0.8,
+        "top1_similarity_min_if_top1_label_1": 0.7,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          35,
+          140
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8827930174563591,
+      "changed": 2,
+      "rule": {
+        "dedicated_prob_1_min": 0.2,
+        "knn_rumor_ratio_top5_min": 0.5,
+        "knn_rumor_ratio_top3_min": 0.7,
+        "top1_similarity_min_if_top1_label_1": 0.4,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          35,
+          140
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8827930174563591,
+      "changed": 2,
+      "rule": {
+        "dedicated_prob_1_min": 0.2,
+        "knn_rumor_ratio_top5_min": 0.5,
+        "knn_rumor_ratio_top3_min": 0.7,
+        "top1_similarity_min_if_top1_label_1": 0.5,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          35,
+          140
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8827930174563591,
+      "changed": 2,
+      "rule": {
+        "dedicated_prob_1_min": 0.2,
+        "knn_rumor_ratio_top5_min": 0.5,
+        "knn_rumor_ratio_top3_min": 0.7,
+        "top1_similarity_min_if_top1_label_1": 0.55,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          35,
+          140
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8827930174563591,
+      "changed": 2,
+      "rule": {
+        "dedicated_prob_1_min": 0.2,
+        "knn_rumor_ratio_top5_min": 0.5,
+        "knn_rumor_ratio_top3_min": 0.7,
+        "top1_similarity_min_if_top1_label_1": 0.6,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          35,
+          140
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8827930174563591,
+      "changed": 2,
+      "rule": {
+        "dedicated_prob_1_min": 0.2,
+        "knn_rumor_ratio_top5_min": 0.5,
+        "knn_rumor_ratio_top3_min": 0.7,
+        "top1_similarity_min_if_top1_label_1": 0.7,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          35,
+          140
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8827930174563591,
+      "changed": 2,
+      "rule": {
+        "dedicated_prob_1_min": 0.2,
+        "knn_rumor_ratio_top5_min": 0.5,
+        "knn_rumor_ratio_top3_min": 0.8,
+        "top1_similarity_min_if_top1_label_1": 0.4,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          35,
+          140
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8827930174563591,
+      "changed": 2,
+      "rule": {
+        "dedicated_prob_1_min": 0.2,
+        "knn_rumor_ratio_top5_min": 0.5,
+        "knn_rumor_ratio_top3_min": 0.8,
+        "top1_similarity_min_if_top1_label_1": 0.5,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          35,
+          140
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8827930174563591,
+      "changed": 2,
+      "rule": {
+        "dedicated_prob_1_min": 0.2,
+        "knn_rumor_ratio_top5_min": 0.5,
+        "knn_rumor_ratio_top3_min": 0.8,
+        "top1_similarity_min_if_top1_label_1": 0.55,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          35,
+          140
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8827930174563591,
+      "changed": 2,
+      "rule": {
+        "dedicated_prob_1_min": 0.2,
+        "knn_rumor_ratio_top5_min": 0.5,
+        "knn_rumor_ratio_top3_min": 0.8,
+        "top1_similarity_min_if_top1_label_1": 0.6,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          35,
+          140
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8827930174563591,
+      "changed": 2,
+      "rule": {
+        "dedicated_prob_1_min": 0.2,
+        "knn_rumor_ratio_top5_min": 0.5,
+        "knn_rumor_ratio_top3_min": 0.8,
+        "top1_similarity_min_if_top1_label_1": 0.7,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          35,
+          140
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8827930174563591,
+      "changed": 2,
+      "rule": {
+        "dedicated_prob_1_min": 0.2,
+        "knn_rumor_ratio_top5_min": 0.6,
+        "knn_rumor_ratio_top3_min": 0.7,
+        "top1_similarity_min_if_top1_label_1": 0.4,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          35,
+          140
+        ]
+      ]
+    },
+    {
+      "accuracy": 0.8827930174563591,
+      "changed": 2,
+      "rule": {
+        "dedicated_prob_1_min": 0.2,
+        "knn_rumor_ratio_top5_min": 0.6,
+        "knn_rumor_ratio_top3_min": 0.7,
+        "top1_similarity_min_if_top1_label_1": 0.5,
+        "min_suspicious_score": 3
+      },
+      "confusion_matrix": [
+        [
+          214,
+          12
+        ],
+        [
+          35,
+          140
+        ]
+      ]
+    }
+  ]
+}
