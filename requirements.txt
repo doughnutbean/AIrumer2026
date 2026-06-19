@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+torch
+transformers
+sentence-transformers
+faiss-cpu
+openai
+jieba
+tqdm
