@@ -17,6 +17,14 @@ build/
 
 # Temp files
 extract_doc.py
+download_glove.py
+extract_glove.py
+
+# GloVe cache
+.vector_cache/
+
+# Large model files (>100MB, not suitable for git)
+*.pt
 
 # Dataset (original CSV)
 # train.csv and val.csv are part of the project data
