@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Tool config
+.codewhale/
+
+# Temp files
+extract_doc.py
+
+# Dataset (original CSV)
+# train.csv and val.csv are part of the project data
