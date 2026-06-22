@@ -9,7 +9,10 @@ class RumorDataset(Dataset):
     def __init__(self, csv_path, tokenizer, max_len=128):
         self.data = pd.read_csv(csv_path)
         self.texts = self.data['text'].astype(str).tolist()
-        self.labels = self.data['label'].tolist() if 'label' in self.data.columns else None
+        if 'label' in self.data.columns:
+            self.labels = self.data['label'].tolist()
+        else:
+            self.labels = None
         self.tokenizer = tokenizer
         self.max_len = max_len
 
@@ -35,8 +38,14 @@ class RumorDataset(Dataset):
 
 def load_data(train_path, val_path, model_name='bert-base-uncased', max_len=128, batch_size=32):
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    train_dataset = RumorDataset(train_path, tokenizer, max_len) if train_path else None
+    if train_path:
+        train_dataset = RumorDataset(train_path, tokenizer, max_len)
+    else:
+        train_dataset = None
     val_dataset = RumorDataset(val_path, tokenizer, max_len)
-    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True) if train_dataset else None
+    if train_dataset:
+        train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+    else:
+        train_loader = None
     val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
     return train_loader, val_loader, tokenizer
