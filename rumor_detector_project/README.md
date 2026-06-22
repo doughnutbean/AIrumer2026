@@ -742,20 +742,7 @@ python src/fn_aware_selective_correction.py --use-llm --top-k 20 --review-thresh
 
 ---
 
-## 18. GitHub 发布注意事项
-
-上传 GitHub 前建议检查：
-
-1. 不要提交真实 API key；
-2. 如果模型文件较大，建议使用 Git LFS 或在 Release 中提供；
-3. 保留 `requirements.txt`；
-4. 保留 `dataset/` 示例或说明数据来源；
-5. 保留 `outputs/fn_aware_selective_correction/metrics.json` 作为结果复现参考；
-6. 在 README 中明确当前真实准确率和 oracle 上界，避免夸大结果。
-
----
-
-## 19. 总结
+## 18. 总结
 
 本项目最终形成了一个面向谣言检测的可解释混合系统。其核心不是简单追求单模型最高分，而是基于错误分析设计选择性修正流程：
 
