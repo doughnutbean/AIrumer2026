@@ -1,7 +1,7 @@
 {
   "api": {
     "base_url": "https://models.sjtu.edu.cn/api/v1",
-    "api_key": "sk-f47VwFx_t2PGQErZ9x01_Q",
+    "api_key": "",
     "chat_completions_endpoint": "/chat/completions",
     "models_endpoint": "/models",
     "protocol": "openai-compatible"
