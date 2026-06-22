@@ -8,7 +8,7 @@ import os
 from dataset import load_data
 from model import RumorDetector
 
-def train_epoch(model, loader, optimizer, criterion, device):
+def __train__(model, loader, optimizer, criterion, device):
     model.train()
     total_loss, correct, total = 0, 0, 0
     for batch in tqdm(loader, desc='Training'):
@@ -19,7 +19,7 @@ def train_epoch(model, loader, optimizer, criterion, device):
         optimizer.zero_grad()
         logits = model(input_ids, attention_mask)
         loss = criterion(logits, labels)
-        loss.backward()
+        loss.backward()     # 反向传播
         optimizer.step()
 
         total_loss += loss.item()
@@ -47,18 +47,16 @@ def evaluate(model, loader, criterion, device):
     return total_loss / len(loader), correct / total
 
 def main():
-    # === 可修改参数 ===
     MODEL_NAME = 'bert-base-uncased'
     MAX_LEN = 128
     BATCH_SIZE = 32
     EPOCHS = 5
-    LR = 2e-5
-    # ================
+    LR = 2e-5    # 学习率
 
     DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(f"使用设备: {DEVICE}")
 
-    # 加载数据（请确保 data/ 目录下有 train.csv 和 val.csv）
+    # 加载数据
     train_loader, val_loader, tokenizer = load_data(
         'data/train.csv', 'data/val.csv',
         model_name=MODEL_NAME, max_len=MAX_LEN, batch_size=BATCH_SIZE
@@ -72,7 +70,7 @@ def main():
     best_acc = 0
     for epoch in range(EPOCHS):
         print(f"\n===== Epoch {epoch+1}/{EPOCHS} =====")
-        train_loss, train_acc = train_epoch(model, train_loader, optimizer, criterion, DEVICE)
+        train_loss, train_acc = __train__(model, train_loader, optimizer, criterion, DEVICE)
         val_loss, val_acc = evaluate(model, val_loader, criterion, DEVICE)
         scheduler.step()
 
@@ -84,7 +82,7 @@ def main():
             os.makedirs('models', exist_ok=True)
             torch.save(model.state_dict(), 'models/best_model.pth')
             tokenizer.save_pretrained('models/tokenizer')
-            print(f"✓ 保存最佳模型 (Val Acc: {val_acc:.4f})")
+            print(f"最佳模型 (Val Acc: {val_acc:.4f})")
 
 if __name__ == '__main__':
     main()
